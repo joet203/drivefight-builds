@@ -1,0 +1,17 @@
+{
+  "protocolVersion": 3,
+  "clientVersion": "0.8.29",
+  "minClientVersion": "0.1.0",
+  "releaseDate": "2026-06-18",
+  "changelog": "Fixed particle warning performance storm; cleaner in-game logs.",
+  "downloads": {
+    "windows": {
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.8.29/pd2-windows.zip",
+      "size": "156866092"
+    },
+    "mac": {
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.8.29/pd2-mac.zip",
+      "size": "160116262"
+    }
+  }
+}
