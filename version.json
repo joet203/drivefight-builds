@@ -1,17 +1,17 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.0",
+  "clientVersion": "0.9.1",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-03",
-  "changelog": "6 car classes with signature weapons and abilities, class-select screen, arena redesign (sniper perches, banked corners, cover, jump lines), new skies, missile overhaul, big performance and netcode fixes. Protocol 4 \u2014 older clients must update.",
+  "releaseDate": "2026-07-06",
+  "changelog": "Procedural car fleet for all 6 classes, real crash deformation and wrecks, desert arena with level select (L), weapon/audio/FX overhaul, crash physics rework",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.0/pd2-windows.zip",
-      "size": "159514430"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.1/pd2-windows.zip",
+      "size": "160M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.0/pd2-mac.zip",
-      "size": "162765059"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.1/pd2-mac.zip",
+      "size": "176M"
     }
   }
 }
