@@ -1,17 +1,17 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.1",
+  "clientVersion": "0.9.2",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-07-06",
-  "changelog": "Procedural car fleet for all 6 classes, real crash deformation and wrecks, desert arena with level select (L), weapon/audio/FX overhaul, crash physics rework",
+  "changelog": "Per-class engine sounds, map ambience, low-health heartbeat, kill stings, radio crossfade, shader warmup (fixes first-run stutter), panoramic desert sky, improved textures and lighting",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.1/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.2/pd2-windows.zip",
       "size": "160M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.1/pd2-mac.zip",
-      "size": "176M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.2/pd2-mac.zip",
+      "size": "177M"
     }
   }
 }
