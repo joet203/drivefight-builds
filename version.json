@@ -1,16 +1,16 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.2",
+  "clientVersion": "0.9.3",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-07-06",
-  "changelog": "Per-class engine sounds, map ambience, low-health heartbeat, kill stings, radio crossfade, shader warmup (fixes first-run stutter), panoramic desert sky, improved textures and lighting",
+  "changelog": "Visual overhaul: desert backdrop mountains and scenery, dramatic lighting, car detail textures with class emblems and panel lines, dozens of car model fixes, improved debris",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.2/pd2-windows.zip",
-      "size": "160M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.3/pd2-windows.zip",
+      "size": "177M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.2/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.3/pd2-mac.zip",
       "size": "177M"
     }
   }
