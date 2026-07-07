@@ -1,17 +1,17 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.3",
+  "clientVersion": "0.9.4",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-07-06",
-  "changelog": "Visual overhaul: desert backdrop mountains and scenery, dramatic lighting, car detail textures with class emblems and panel lines, dozens of car model fixes, improved debris",
+  "changelog": "Weapon sound identity per class, cinematic death effects with persistent wreck smoke, skid marks that follow the wheels, smoother frames, kill feed and damage indicators, upgraded desert scenery, big code cleanup",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.3/pd2-windows.zip",
-      "size": "177M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.4/pd2-windows.zip",
+      "size": "176M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.3/pd2-mac.zip",
-      "size": "177M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.4/pd2-mac.zip",
+      "size": "176M"
     }
   }
 }
