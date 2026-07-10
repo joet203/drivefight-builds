@@ -1,17 +1,17 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.4",
+  "clientVersion": "0.9.82",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-06",
-  "changelog": "Weapon sound identity per class, cinematic death effects with persistent wreck smoke, skid marks that follow the wheels, smoother frames, kill feed and damage indicators, upgraded desert scenery, big code cleanup",
+  "releaseDate": "2026-07-10",
+  "changelog": "Full battle-damage system: cars scorch and accumulate bullet holes and dents as they take damage, roof-mounted turrets, camera pulled back, audio and balance fixes.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.4/pd2-windows.zip",
-      "size": "176M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.82/pd2-windows.zip",
+      "size": "210M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.4/pd2-mac.zip",
-      "size": "176M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.82/pd2-mac.zip",
+      "size": "213M"
     }
   }
 }
