@@ -1,16 +1,16 @@
 {
   "protocolVersion": 4,
-  "clientVersion": "0.9.107",
+  "clientVersion": "0.9.111",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-07-12",
-  "changelog": "Soccer ball mode with real goals, wave survival with lives and Game Over, stunt-to-boost trick system, Shield and Overdrive pickups, working gamepad rumble, map-aware smarter enemies at full health, spread-out enemy spawns, softer hit audio with crackle fixes, and a performance pass.",
+  "changelog": "Enemy cars now reliably leave spawn and keep driving across every arena. Telephoto chase-camera framing keeps player and enemy scale visually consistent. Includes the latest combat, arena, presentation, asset, and documentation updates.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.107/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.111/pd2-windows.zip",
       "size": "215M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.107/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.111/pd2-mac.zip",
       "size": "218M"
     }
   }
