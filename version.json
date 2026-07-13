@@ -1,16 +1,16 @@
 {
-  "protocolVersion": 4,
-  "clientVersion": "0.9.111",
+  "protocolVersion": 5,
+  "clientVersion": "0.10.0",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-12",
-  "changelog": "Enemy cars now reliably leave spawn and keep driving across every arena. Telephoto chase-camera framing keeps player and enemy scale visually consistent. Includes the latest combat, arena, presentation, asset, and documentation updates.",
+  "releaseDate": "2026-07-13",
+  "changelog": "Explicit match modes, Protocol 5 session contracts and reconnect gates, shared combat and server-owned pickups, guarded motion, shared human/bot input commands, and balance tooling.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.111/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.10.0/pd2-windows.zip",
       "size": "215M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.9.111/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.10.0/pd2-mac.zip",
       "size": "218M"
     }
   }
