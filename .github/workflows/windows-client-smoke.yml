@@ -1,0 +1,105 @@
+name: Windows client smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release version without the leading v
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  vehicle-feel-lab:
+    runs-on: windows-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Download Windows release
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $url = "https://github.com/joet203/drivefight-builds/releases/download/v$version/pd2-windows.zip"
+
+          Invoke-WebRequest -Uri $url -OutFile client.zip
+          Expand-Archive -Path client.zip -DestinationPath client
+
+          $exe = Get-ChildItem client -Filter pd2.exe -Recurse | Select-Object -First 1
+          if ($null -eq $exe) {
+            throw "pd2.exe was not found in the release archive"
+          }
+
+          "PD2_EXE=$($exe.FullName)" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Launch Vehicle Feel Lab natively
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $log = Join-Path $env:RUNNER_TEMP "drivefight-windows-smoke.log"
+          $arguments = @(
+            "-batchmode",
+            "-nographics",
+            "--vehicle-feel-lab",
+            "-logFile",
+            $log
+          )
+
+          $process = Start-Process `
+            -FilePath $env:PD2_EXE `
+            -WorkingDirectory (Split-Path $env:PD2_EXE) `
+            -ArgumentList $arguments `
+            -PassThru
+
+          $labStarted = $false
+          try {
+            for ($attempt = 0; $attempt -lt 60; $attempt++) {
+              Start-Sleep -Seconds 1
+              $process.Refresh()
+
+              if (Test-Path $log) {
+                $text = Get-Content $log -Raw
+                if ($text -match "\[VehiclePlayground\] Offline lab active") {
+                  $labStarted = $true
+                  break
+                }
+              }
+
+              if ($process.HasExited) {
+                throw "The Windows client exited before the Vehicle Feel Lab became active (exit $($process.ExitCode))"
+              }
+            }
+
+            if (-not $labStarted) {
+              throw "The Windows client did not activate the Vehicle Feel Lab within 60 seconds"
+            }
+
+            Start-Sleep -Seconds 10
+            $process.Refresh()
+            if ($process.HasExited) {
+              throw "The Windows client exited during the stability window (exit $($process.ExitCode))"
+            }
+          }
+          finally {
+            if (-not $process.HasExited) {
+              Stop-Process -Id $process.Id -Force
+            }
+          }
+
+          Get-Content $log
+          $finalLog = Get-Content $log -Raw
+          if ($finalLog -match "NullReferenceException|InvalidOperationException|Unhandled Exception|Crash!!!|Aborting batchmode due to failure") {
+            throw "The Windows player log contains a managed exception or crash marker"
+          }
+
+          Copy-Item $log "$env:GITHUB_WORKSPACE/drivefight-windows-smoke.log"
+
+      - name: Upload player log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-client-smoke-${{ inputs.version }}
+          path: drivefight-windows-smoke.log
+          if-no-files-found: warn
