@@ -1,17 +1,17 @@
 {
   "protocolVersion": 5,
-  "clientVersion": "0.11.0",
+  "clientVersion": "0.12.0",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-13",
-  "changelog": "\n### Multiplayer world synchronization\n\n- Network matches now wait for the validated server-owned map, mode, team, seed, rules, rate, and\n  content contract before constructing cars, arenas, objectives, pickups, or bots.\n- Fresh joins and disconnect/reconnect cycles now construct a new synchronized world on Block Fort,\n  Dust Pan, Soccer Pitch, and Suburbia.\n- Player and respawn placement now uses the selected arena's spawn table on clients and servers.\n- Remote cars cannot spawn or register before their handshake and synchronized world are ready.\n\n### Combat consistency\n\n- Offline and dedicated-server combat now share a three-second respawn policy.\n- Added a real-build parity gate that runs the same Sniper sequence offline and against a pure\n  dedicated server, comparing health, shields, primary and secondary ammunition, pickups,\n  collision damage, death, respawn, and reload across 11 states.\n- Fixed the first spawned car sometimes initializing as Scout before the saved class was loaded.\n- Fixed stable network pickup ID collisions for mirrored Suburbia pickup positions.\n\n### Validation and tooling\n\n- Expanded the runtime release gate to all three standalone modes, all four host/client map-mode\n  reconnect contracts, and a pure dedicated-server reconnect.\n- Added machine-readable world-lifecycle and combat-parity reports that fail on mismatched state,\n  managed errors, exceptions, missing reports, or shutdown hangs.\n- Expanded the complete EditMode suite to 88 tests.\n\n### Still in development\n\n- Vehicle motion remains client-authored and server-validated; server input simulation, prediction,\n  reconciliation, and processed-input acknowledgements are next-phase work.\n- Bots still use a compatibility motor and gunner rather than the final shared server execution path.\n- Public matchmaking, non-tailnet server access, complete authoritative objectives/late-join state,\n  and large-server capacity validation are not part of this release.",
+  "releaseDate": "2026-07-16",
+  "changelog": "Vehicle Feel Lab with high-contrast live tuning, durable autosaves, shareable tester packets, and improved driving/fire controls.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.11.0/pd2-windows.zip",
-      "size": "215M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.0/pd2-windows.zip",
+      "size": "212M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.11.0/pd2-mac.zip",
-      "size": "218M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.0/pd2-mac.zip",
+      "size": "215M"
     }
   }
 }
