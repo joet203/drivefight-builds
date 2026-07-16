@@ -40,9 +40,14 @@ jobs:
           $ErrorActionPreference = "Stop"
           $log = Join-Path $env:RUNNER_TEMP "drivefight-windows-smoke.log"
           $arguments = @(
-            "-batchmode",
-            "-nographics",
             "--vehicle-feel-lab",
+            "-screen-fullscreen",
+            "0",
+            "-screen-width",
+            "1280",
+            "-screen-height",
+            "720",
+            "-force-d3d11",
             "-logFile",
             $log
           )
@@ -53,14 +58,20 @@ jobs:
             -ArgumentList $arguments `
             -PassThru
 
+          $defaultLog = Join-Path $env:USERPROFILE "AppData/LocalLow/DefaultCompany/DrivingGamePOC/Player.log"
+          $activeLog = $log
           $labStarted = $false
           try {
             for ($attempt = 0; $attempt -lt 60; $attempt++) {
               Start-Sleep -Seconds 1
               $process.Refresh()
 
-              if (Test-Path $log) {
-                $text = Get-Content $log -Raw
+              if (-not (Test-Path $activeLog) -and (Test-Path $defaultLog)) {
+                $activeLog = $defaultLog
+              }
+
+              if (Test-Path $activeLog) {
+                $text = Get-Content $activeLog -Raw
                 if ($text -match "\[VehiclePlayground\] Offline lab active") {
                   $labStarted = $true
                   break
@@ -86,15 +97,17 @@ jobs:
             if (-not $process.HasExited) {
               Stop-Process -Id $process.Id -Force
             }
+
+            if (Test-Path $activeLog) {
+              Copy-Item $activeLog "$env:GITHUB_WORKSPACE/drivefight-windows-smoke.log" -Force
+            }
           }
 
-          Get-Content $log
-          $finalLog = Get-Content $log -Raw
+          Get-Content $activeLog
+          $finalLog = Get-Content $activeLog -Raw
           if ($finalLog -match "NullReferenceException|InvalidOperationException|Unhandled Exception|Crash!!!|Aborting batchmode due to failure") {
             throw "The Windows player log contains a managed exception or crash marker"
           }
-
-          Copy-Item $log "$env:GITHUB_WORKSPACE/drivefight-windows-smoke.log"
 
       - name: Upload player log
         if: always()
