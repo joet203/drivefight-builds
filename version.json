@@ -1,17 +1,17 @@
 {
   "protocolVersion": 5,
-  "clientVersion": "0.12.1",
+  "clientVersion": "0.12.2",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-07-18",
-  "changelog": "Stability and internal hardening: a stronger adversarial network-test gate plus fixes to test tooling and a minor server bookkeeping leak. No gameplay or protocol changes; existing clients stay compatible.",
+  "changelog": "Fun-first vehicle tuning: highlighted high-impact Feel Lab controls, quicker shared driving response, more accessible drift, punchier boost, a more forgiving jump arc, clearer combat camera framing, and more distinct presets. Protocol remains 5.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.1/pd2-windows.zip",
-      "size": "215M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.2/pd2-windows.zip",
+      "size": "212M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.1/pd2-mac.zip",
-      "size": "218M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.2/pd2-mac.zip",
+      "size": "215M"
     }
   }
 }
