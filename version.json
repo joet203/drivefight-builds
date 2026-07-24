@@ -1,17 +1,17 @@
 {
   "protocolVersion": 5,
-  "clientVersion": "0.12.2",
+  "clientVersion": "0.13.0",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-18",
-  "changelog": "Fun-first vehicle tuning: highlighted high-impact Feel Lab controls, quicker shared driving response, more accessible drift, punchier boost, a more forgiving jump arc, clearer combat camera framing, and more distinct presets. Protocol remains 5.",
+  "releaseDate": "2026-07-24",
+  "changelog": "Two new arenas (Victoria Gardens destructible suburb, Candy Bowl bathtub arena) with a Feel Lab time-trial circuit; Mario Kart-style locked-arc drifting with charge tiers, sparks, and boost surge; full audio mix overhaul (authored mixer, sidechain ducking, calmer soundscape); controller aim assist distinct from mouse; new sound and explosion effects; enemy visibility improvements",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.2/pd2-windows.zip",
-      "size": "212M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.13.0/pd2-windows.zip",
+      "size": "240M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.12.2/pd2-mac.zip",
-      "size": "215M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.13.0/pd2-mac.zip",
+      "size": "243M"
     }
   }
 }
