@@ -1,17 +1,17 @@
 {
-  "protocolVersion": 5,
-  "clientVersion": "0.13.0",
+  "protocolVersion": 6,
+  "clientVersion": "0.14.0",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-07-24",
-  "changelog": "Two new arenas (Victoria Gardens destructible suburb, Candy Bowl bathtub arena) with a Feel Lab time-trial circuit; Mario Kart-style locked-arc drifting with charge tiers, sparks, and boost surge; full audio mix overhaul (authored mixer, sidechain ducking, calmer soundscape); controller aim assist distinct from mouse; new sound and explosion effects; enemy visibility improvements",
+  "releaseDate": "2026-08-18",
+  "changelog": "Capture the Flag with team bases and defending bots in the new Candy Cup arena; more new arenas: Sugar Rush, Maple Street (modeled from a real surveyed neighborhood), and the Demolition District prototype; Rocket League-style air game with flip cancels, directional dodges, and surface-aware jumps, plus sharper power slides; all six cars rebuilt to reference proportions with the Scout now a true rally STI; closer combat camera; network protocol update - older clients will be prompted to update",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.13.0/pd2-windows.zip",
-      "size": "240M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.14.0/pd2-windows.zip",
+      "size": "288M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.13.0/pd2-mac.zip",
-      "size": "243M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.14.0/pd2-mac.zip",
+      "size": "291M"
     }
   }
 }
