@@ -1,17 +1,17 @@
 {
-  "protocolVersion": 6,
-  "clientVersion": "0.14.0",
+  "protocolVersion": 8,
+  "clientVersion": "0.16.0",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-08-18",
-  "changelog": "Capture the Flag with team bases and defending bots in the new Candy Cup arena; more new arenas: Sugar Rush, Maple Street (modeled from a real surveyed neighborhood), and the Demolition District prototype; Rocket League-style air game with flip cancels, directional dodges, and surface-aware jumps, plus sharper power slides; all six cars rebuilt to reference proportions with the Scout now a true rally STI; closer combat camera; network protocol update - older clients will be prompted to update",
+  "releaseDate": "2026-09-19",
+  "changelog": "DriveFight 0.16.0 \u2014 playability and friends update\n\n- More predictable air response, landings and contact-aware self-righting, with collision checks during recovery.\n- Trick names and points live at the top of the screen, fade when idle, and stay separate from match objectives. Menus, controls and statistics are clearer.\n- Offline Capture the Flag recovers unreachable flags and escaped carriers while preserving valid elevated routes.\n- Roof turrets aim more consistently on tilted cars, separate recoil from projectile origin, and respect close cover.\n- Friends flow, reconnect/offline recovery, and online Soccer ball, score, clock and restart behavior are improved.\n- Restored authored sound feedback and the optional Block Fort comparison and live-tuning labs. Floating Block Fort sponsor dressing is corrected.\n\nMatching Mac, Windows and Linux server builds use protocol 8. Arena Battle and Soccer support online play; Training Survival and Capture the Flag remain offline. Internet access outside the existing Tailscale group is unchanged.\n\nSource implementation: 7a40afb73cf90dc955ee8822f725b78b698dc1be.\n",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.14.0/pd2-windows.zip",
-      "size": "288M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.0/pd2-windows.zip",
+      "size": "339M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.14.0/pd2-mac.zip",
-      "size": "291M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.0/pd2-mac.zip",
+      "size": "342M"
     }
   }
 }
