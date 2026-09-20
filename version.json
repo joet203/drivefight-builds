@@ -1,16 +1,16 @@
 {
   "protocolVersion": 8,
-  "clientVersion": "0.16.1",
+  "clientVersion": "0.16.2",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-09-20",
-  "changelog": "DriveFight 0.16.1 improves ground contact during flips.\n\n- Fast descending flips now sweep the car hull toward the floor, reducing clipping while keeping motion along the surface.\n- Roof, side and nose scrapes preserve physical momentum without the extra crash slowdown.\n- Ground contact ends forced dodge spin and restores attitude control; jump resources still require a proper landing.\n- Automatic upright assistance respects the rotation-clearance check.\n\nProtocol remains 8. Matching macOS, Windows and Linux server builds.\n",
+  "changelog": "# DriveFight v0.16.2\n\n- Finer controller steering and aim with one deadzone, plus predictable handoff between mouse, Q/E and right-stick aiming.\n- Mouse aiming respects car height, and right-mouse camera orbit responds consistently across frame rates.\n- Reverse driving no longer builds drift charge; stopping clears stale drift feedback while forward drift rewards remain.\n- Bots and flamethrowers can fire past pickup volumes while still respecting solid cover.\n- Soccer turf gains close-up grass detail, subtler wear and less obvious texture tiling.\n- Refined car paint, tapered projectile trails and clearer damage smoke.\n- Opaque death spheres are replaced by an ember burst and rising mushroom-shaped smoke.\n\nProtocol 8. Includes the v0.16.1 ground-contact improvements. Mac and Windows clients and the Tower server ship together. Arena Battle and Soccer support private online matches; Training Survival and Capture the Flag remain offline.\n",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.1/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.2/pd2-windows.zip",
       "size": "339M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.1/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.2/pd2-mac.zip",
       "size": "342M"
     }
   }
