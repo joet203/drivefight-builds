@@ -1,16 +1,16 @@
 {
   "protocolVersion": 16,
-  "clientVersion": "0.20.31",
+  "clientVersion": "0.20.32",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-10-06",
-  "changelog": "Matching protocol16 clients and server; lethal star brushes, synchronized house destruction, star placement recovery and human ram damage bonus.",
+  "changelog": "Restored online weapon and ammo HUD, visible kill notifications, and star contact validation for client and server collision shapes.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.31/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.32/pd2-windows.zip",
       "size": "349M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.31/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.32/pd2-mac.zip",
       "size": "366M"
     }
   }
