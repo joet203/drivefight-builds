@@ -1,16 +1,16 @@
 {
-  "protocolVersion": 15,
-  "clientVersion": "0.20.30",
+  "protocolVersion": 16,
+  "clientVersion": "0.20.31",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-10-06",
-  "changelog": "Firmer ground recovery, online homing fixes, and star contact takedowns.",
+  "changelog": "Matching protocol16 clients and server; lethal star brushes, synchronized house destruction, star placement recovery and human ram damage bonus.",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.30/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.31/pd2-windows.zip",
       "size": "349M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.30/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.31/pd2-mac.zip",
       "size": "366M"
     }
   }
