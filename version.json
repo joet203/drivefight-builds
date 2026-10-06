@@ -1,16 +1,16 @@
 {
-  "protocolVersion": 13,
-  "clientVersion": "0.20.26",
+  "protocolVersion": 14,
+  "clientVersion": "0.20.27",
   "minClientVersion": "0.1.0",
   "releaseDate": "2026-10-05",
-  "changelog": "DriveFight 0.20.26 \u2014 Jungle, tutorial, star power, and multiplayer refresh\n\n- New Jungle biome, destructible plants and environmental art for offline play.\n- Guided Easy Practice, a stronger invincibility star, and improved vehicle handling and weapon presentation.\n- Ascending multi-kill rewards with warm, progressively rising notes.\n- Updated main menu, HUD, downloads and installation guidance.\n- Coordinated Mac, Windows and Linux dedicated-server release on protocol 13. All players must update.\n\nOnline play: Arena Battle and Soccer through the configured host/Tailscale network. Tower uses Arena Battle on Dust Pan with the current default rules. CTF, Easy Practice, Jungle and star mechanics retain their offline scope.\n\nValidation: 1,956 EditMode tests; vehicle/combat parity; bot replication; network-condition scenarios; reconnect, match recovery and rendered smoke checks. Windows compiled successfully; Windows gameplay and public internet reachability have not been verified in this pass.\n\nFree personal, noncommercial preview. Star music made with Suno. Mac and Windows builds are unsigned; see https://drivefight.vercel.app/ for installation steps.\n",
+  "changelog": "DriveFight 0.20.27 \u2014 Match scores and server status\n\n- See player and bot counts in the multiplayer lobby.\n- Hold Tab or controller View/Select for country flags, car classes, K/D/A and server-measured ping.\n- Get assist credit for meaningful recent damage, including shield damage.\n- See final scores between online rounds; Arena Battle moves to the next supported map automatically.\n- Fixed cosmetic car debris running on the dedicated server, where it could leave invisible shot blockers.\n- Clearer website text and controls.\n\nEveryone joining a match must update: matching Mac, Windows and Linux server builds use protocol 14.\n\nOnline modes are Arena Battle and Soccer on the configured private host/Tailscale network. CTF, Jungle, Easy Practice and star mechanics remain offline. Windows is cross-built, but interactive Windows gameplay and public non-Tailnet access have not been verified here. A Mac native shutdown crash appeared once after a successful check; the isolated rerun passed, and the engine limitation remains documented.\n\nFree personal, noncommercial preview. Star music made with Suno. Clients are unsigned; installation steps: https://drivefight.vercel.app/\n",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.26/pd2-windows.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.27/pd2-windows.zip",
       "size": "349M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.26/pd2-mac.zip",
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.27/pd2-mac.zip",
       "size": "366M"
     }
   }
