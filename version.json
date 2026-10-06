@@ -1,17 +1,17 @@
 {
-  "protocolVersion": 8,
-  "clientVersion": "0.16.2",
+  "protocolVersion": 13,
+  "clientVersion": "0.20.26",
   "minClientVersion": "0.1.0",
-  "releaseDate": "2026-09-20",
-  "changelog": "# DriveFight v0.16.2\n\n- Finer controller steering and aim with one deadzone, plus predictable handoff between mouse, Q/E and right-stick aiming.\n- Mouse aiming respects car height, and right-mouse camera orbit responds consistently across frame rates.\n- Reverse driving no longer builds drift charge; stopping clears stale drift feedback while forward drift rewards remain.\n- Bots and flamethrowers can fire past pickup volumes while still respecting solid cover.\n- Soccer turf gains close-up grass detail, subtler wear and less obvious texture tiling.\n- Refined car paint, tapered projectile trails and clearer damage smoke.\n- Opaque death spheres are replaced by an ember burst and rising mushroom-shaped smoke.\n\nProtocol 8. Includes the v0.16.1 ground-contact improvements. Mac and Windows clients and the Tower server ship together. Arena Battle and Soccer support private online matches; Training Survival and Capture the Flag remain offline.\n",
+  "releaseDate": "2026-10-05",
+  "changelog": "DriveFight 0.20.26 \u2014 Jungle, tutorial, star power, and multiplayer refresh\n\n- New Jungle biome, destructible plants and environmental art for offline play.\n- Guided Easy Practice, a stronger invincibility star, and improved vehicle handling and weapon presentation.\n- Ascending multi-kill rewards with warm, progressively rising notes.\n- Updated main menu, HUD, downloads and installation guidance.\n- Coordinated Mac, Windows and Linux dedicated-server release on protocol 13. All players must update.\n\nOnline play: Arena Battle and Soccer through the configured host/Tailscale network. Tower uses Arena Battle on Dust Pan with the current default rules. CTF, Easy Practice, Jungle and star mechanics retain their offline scope.\n\nValidation: 1,956 EditMode tests; vehicle/combat parity; bot replication; network-condition scenarios; reconnect, match recovery and rendered smoke checks. Windows compiled successfully; Windows gameplay and public internet reachability have not been verified in this pass.\n\nFree personal, noncommercial preview. Star music made with Suno. Mac and Windows builds are unsigned; see https://drivefight.vercel.app/ for installation steps.\n",
   "downloads": {
     "windows": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.2/pd2-windows.zip",
-      "size": "339M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.26/pd2-windows.zip",
+      "size": "349M"
     },
     "mac": {
-      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.16.2/pd2-mac.zip",
-      "size": "342M"
+      "url": "https://github.com/joet203/drivefight-builds/releases/download/v0.20.26/pd2-mac.zip",
+      "size": "366M"
     }
   }
 }
